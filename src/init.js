@@ -6,7 +6,7 @@ import "./models/User";
 import "./models/Comment";
 import app from "./server";
 
-const PORT = 4000;
+const PORT = procees.env.PORT || 4000;
 
 const handleListening = () => console.log(`✅ 서버가 localhost:${PORT}에서 실행중입니다 👌`);
 
